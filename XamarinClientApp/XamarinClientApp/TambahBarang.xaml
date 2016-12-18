@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.TambahBarang">
+  <StackLayout>
+  <Label Text="Masukan Nama Jenis Motor :" />
+  <Entry x:Name="TxtIdJenisMotor" Placeholder="insert Id Jenis Motor"/>
+  <Entry x:Name="TxtKategoriId" Placeholder="insert nama Kategori Id"/>
+  <Entry x:Name="TxtNama" Placeholder="Insert Nama Barang"/>
+    <Entry x:Name="TxtStok" Placeholder="Insert Stok Barang"/>
+    <Entry x:Name="TxtHargaBeli" Placeholder="Insert Harga Beli Barang"/>
+    <Entry x:Name="TxtHargaJual" Placeholder="Insert Harga Jual Barang"/>
+    <DatePicker x:Name="DtTanggalBeli"/>
+  <Button x:Name="BtnBarang" Text="Tambah" />
+  </StackLayout>
+</ContentPage>

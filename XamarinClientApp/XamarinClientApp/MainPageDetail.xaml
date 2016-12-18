@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.MainPageDetail">
+  <ScrollView>
+    <StackLayout HightRequest ="30">
+      <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+      <Grid.RowDefinitiions RowSpacing="0">
+        <RowDefinition Height="30"/>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="100"/>
+      </Grid.RowDefinitiions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="150" />
+    <ColumnDefinition Width="150" />
+    </Grid.ColumnDefinitions>
+    <Button Text="View" x:Name="btnViewKategori"
+            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+      FontFamily="Arial" FontAttributes="Bold" FontSize="20"/>
+       <Button Text="Add" x:Name="btnViewBarang"
+            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+      FontFamily="Arial" FontAttributes="Bold" FontSize="20"/>
+ <Button Text="Edit" x:Name="btnViewJenisMotor"
+            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+      FontFamily="Arial" FontAttributes="Bold" FontSize="20"/>
+    </Grid>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
