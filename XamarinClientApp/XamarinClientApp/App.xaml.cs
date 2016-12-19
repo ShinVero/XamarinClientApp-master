@@ -13,7 +13,7 @@ namespace XamarinClientApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new SearchBarangPage();
         }
 
         protected override void OnStart()

@@ -16,6 +16,13 @@ namespace XamarinClientApp
             btnViewBarang.Clicked += BtnViewBarang_Clicked;
             btnViewJenisMotor.Clicked += BtnViewJenisMotor_Clicked;
             btnViewKategori.Clicked += BtnViewKategori_Clicked;
+            btnViewSearch.Clicked += BtnViewSearch_Clicked;
+        }
+
+        private void BtnViewSearch_Clicked(object sender, EventArgs e)
+        {
+            SearchBarangPage goToSearch = new SearchBarangPage();
+            Navigation.PushAsync(goToSearch);
         }
 
         private void BtnViewKategori_Clicked(object sender, EventArgs e)

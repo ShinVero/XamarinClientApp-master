@@ -3,29 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinClientApp.MainPageDetail">
   <ScrollView>
-    <StackLayout HightRequest ="30">
+    <StackLayout HeightRequest ="30"></StackLayout>
       <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-      <Grid.RowDefinitiions RowSpacing="0">
-        <RowDefinition Height="30"/>
-        <RowDefinition Height="100"/>
-        <RowDefinition Height="100"/>
-        <RowDefinition Height="100"/>
-        <RowDefinition Height="100"/>
-      </Grid.RowDefinitiions>
+      <Grid.RowDefinitions RowSpacing="0">
+        <RowDefinition Height="100" /> <!-- row 0 -->
+        <RowDefinition Height="30"/> <!-- row 1 -->
+        <RowDefinition Height="100"/> <!-- row 2 -->
+        <RowDefinition Height="100"/> <!-- row 3 -->
+        <RowDefinition Height="100"/> <!-- row 4 -->
+        <RowDefinition Height="100"/> <!-- row 5 -->
+      </Grid.RowDefinitions>
+        
     <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="150" />
+    <ColumnDefinition Width="150" />
     <ColumnDefinition Width="150" />
     </Grid.ColumnDefinitions>
-    <Button Text="View" x:Name="btnViewKategori"
-            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+    
+        <Label Text="Menu" Grid.Row="0" FontFamily="Arial"  FontAttributes="Bold" FontSize="30"  Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" />
+        
+        <Button Text="Kategori" x:Name="btnViewKategori"
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
       FontFamily="Arial" FontAttributes="Bold" FontSize="20"/>
-       <Button Text="Add" x:Name="btnViewBarang"
-            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+       
+        <Button Text="Barang" x:Name="btnViewBarang"
+            Grid.Row="3" Grid.Column="0" Grid.ColumnSpan ="2"
       FontFamily="Arial" FontAttributes="Bold" FontSize="20"/>
- <Button Text="Edit" x:Name="btnViewJenisMotor"
-            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+ 
+        <Button Text="Jenis Motor" x:Name="btnViewJenisMotor"
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan ="2"
       FontFamily="Arial" FontAttributes="Bold" FontSize="20"/>
-    </Grid>
-    </StackLayout>
+
+        <Button Text="Search Barang" x:Name="btnViewSearch"
+            Grid.Row="5" Grid.Column="0" Grid.ColumnSpan ="2"
+      FontFamily="Arial" FontAttributes="Bold" FontSize="20"/>
+
+  
+      </Grid>
   </ScrollView>
 </ContentPage>

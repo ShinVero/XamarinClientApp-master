@@ -21,22 +21,23 @@ namespace XamarinClientApp
             // Creating our pages for menu navigation
             // Here you can define title for item, 
             // icon on the left side, and page that you want to open after selection
-            var page1 = new MasterPageItem() { Title = "Item 1",  TargetType = typeof(KategoriPage) };
-            var page2 = new MasterPageItem() { Title = "Item 2",  TargetType = typeof(JenisMotorPage) };
-            var page3 = new MasterPageItem() { Title = "Item 3", TargetType = typeof(BarangPage) };
-           
+            var page1 = new MasterPageItem() { Title = "HOME", TargetType = typeof(MainPageDetail) };
+            var page2 = new MasterPageItem() { Title = "Kategori",  TargetType = typeof(KategoriPage) };
+            var page3 = new MasterPageItem() { Title = "Jenis Motor",  TargetType = typeof(JenisMotorPage) };
+            var page4 = new MasterPageItem() { Title = "Barang", TargetType = typeof(BarangPage) };
+            var page5 = new MasterPageItem() { Title = "Cari Barang", TargetType = typeof(SearchBarangPage) };
 
             // Adding menu items to menuList
             menuList.Add(page1);
             menuList.Add(page2);
             menuList.Add(page3);
-           
-
+            menuList.Add(page4);
+            menuList.Add(page5);
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = menuList;
 
             // Initial navigation, this can be used for our home page
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(BarangPage)));
+            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(MainPageDetail)));
         }
 
         // Event for Menu Item selection, here we are going to handle navigation based

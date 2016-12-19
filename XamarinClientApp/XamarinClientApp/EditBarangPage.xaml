@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinClientApp.EditBarangPage">
   <ScrollView>
+    <StackLayout>
       <Label Text="Kode Barang" />
       <Entry x:Name="TxtKodeBarang" IsEnabled="False" Text="{Binding KodeBarang}" />
 
@@ -26,10 +27,10 @@
 
       <Label Text="Tanggal Beli" />
       <DatePicker x:Name="DtTanggalBeli" Date="{Binding TanggalBeli}" />
-
       <StackLayout Orientation="Horizontal">
-        <Button x:Name="btnEdit" Text="Edit" HeightRequest="20" />
-        <Button x:Name="btnDelete" Text="Delete" HeightRequest="20" />
+        <Button x:Name="btnEdit" Text="Edit" />
+        <Button x:Name="btnDelete" Text="Delete"/>
       </StackLayout>
+    </StackLayout>
   </ScrollView>
 </ContentPage>
